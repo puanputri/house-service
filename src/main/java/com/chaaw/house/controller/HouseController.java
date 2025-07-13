@@ -49,5 +49,11 @@ public class HouseController {
         return Response.status(Response.Status.ACCEPTED).entity(house).build();
     }
 
+    @POST
+    @Path("/with-owner")
+    public House createHouseWithOwner(House house) {
+        // house.getOwner() must be non-null
+        return houseService.createHouseWithOwner(house);
+    }
 
 }

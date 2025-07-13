@@ -37,4 +37,10 @@ public class HouseService {
     public House getHouse(String houseId) {
         return houseRepository.findById(houseId);
     }
+
+    @Transactional
+    public House createHouseWithOwner(House house) {
+        houseRepository.persist(house);
+        return house;
+    }
 }
