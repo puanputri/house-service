@@ -16,4 +16,4 @@ public class PokemonService {
     }
 }
 
-//create 4 api pokemon and 1 creative selain data pokemon
+//create 4 api pokemon and 1 creative service selain data pokemon
